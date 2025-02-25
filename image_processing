@@ -1,0 +1,3 @@
+# extract single frame using ffmpeg
+
+ffmpeg -i [INPUT].MP4 -r 30 -vf select='eq(n\,[FRAME_COUNT])' -vframes 1 [output]_%d.bmp
